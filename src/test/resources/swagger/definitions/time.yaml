@@ -1,0 +1,26 @@
+TimeSummaryInfo:
+  type: object
+  properties:
+    timeType:
+      type: string
+      description: type of content for which the time applies to
+      default: GLOBAL
+      enum:
+        - GLOBAL
+        - CLIENT
+        - NETWORK
+        - CURRENT
+    time:
+      type: integer
+      format: int64
+      description: the server time
+
+TimeSummary:
+  allOf:
+    - $ref: "#/definitions/BaseObject"
+    - type: object
+      properties:
+        response:
+          type: array
+          items: 
+            $ref: "#/definitions/TimeSummaryInfo"

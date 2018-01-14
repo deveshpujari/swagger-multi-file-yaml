@@ -1,0 +1,18 @@
+TimeSummary:
+  description: The most recent assurance server time with client or device data
+  schema:
+    $ref: '#/definitions/TimeSummary'
+Forbidden:
+  description: This user is forbidden to access this resource.
+  schema:
+    $ref: "#/definitions/ErrorResponse"
+UnAuthorized:
+  description: This user is not authorized to access this respurce.
+  schema:
+    $ref: "#/definitions/ErrorResponse"
+default:
+  description: Unexpected error
+  schema:
+    $ref: "#/definitions/ErrorResponse"
+
+

@@ -1,0 +1,27 @@
+# this is swagger YAML file
+#
+swagger: '2.0'
+#The info object will be refined later.
+info:
+  $ref: ./info/index.yaml
+# the domain of the service
+#host: api.uber.com
+# array of all schemes that your API supports
+schemes:
+  - https
+# will be prefixed to all paths
+basePath: /api/service/v1
+produces:
+  - application/json
+
+paths:
+  $ref: ./paths/index.yaml
+
+parameters:
+  $ref: ./parameters/index.yaml
+
+responses:
+  $ref: ./responses/index.yaml
+
+definitions:
+  $ref: ./definitions/index.yaml

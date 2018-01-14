@@ -1,0 +1,34 @@
+orderParam:
+  name: order
+  in: query
+  description: "Wheather ordering is ascending or descending"
+  required: false
+  type: string
+  default: des
+  enum:
+     - asc
+     - des
+
+entityIdParam:
+  name: entityId
+  in: query
+  description: "unique id of the entity"
+  required: true
+  type: string
+  format: string
+
+entityNameParam:
+  name: entityName
+  in: query
+  description: "Entity Name which is used to get the issue"
+  required: true
+  type: string
+  format: string
+
+issueIdParam:
+  name: issueId
+  in: path
+  required: true
+  type: string
+  format: string
+  description: "Unique identifier for issue id."

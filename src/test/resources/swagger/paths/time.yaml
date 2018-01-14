@@ -1,0 +1,16 @@
+get:
+  tags:
+    - Time
+  responses:
+    200:
+      $ref: "#/responses/TimeSummary"
+    403:
+      $ref: "#/responses/Forbidden"
+    401:
+      $ref: "#/responses/UnAuthorized"
+    default:
+      $ref: "#/responses/default"
+  summary: Get current server time under consideration.
+  operationId: getTime
+  description: 
+    Get the most recent server time.

@@ -1,0 +1,19 @@
+Error:
+  type: object
+  properties:
+    errorCode:
+      type: integer
+      format: int32
+      description: Code of the error
+    message:
+      type: string
+      description: Brief message about the error condition
+    detail:
+      type: string
+      description: A more detailed explanation of the error condition the parameter and its value, that caused the condition and why it caused it.
+
+ErrorResponse:
+  type: object
+  properties:
+    response:
+      $ref: '#/definitions/Error'

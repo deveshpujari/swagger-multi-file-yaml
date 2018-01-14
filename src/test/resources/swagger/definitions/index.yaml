@@ -1,0 +1,8 @@
+
+$ref: './baseobject.yaml'
+
+#### Error #######
+$ref: './errors.yaml'
+
+######### Time ###########
+$ref: './time.yaml'
